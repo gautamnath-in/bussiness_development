@@ -269,3 +269,113 @@ footer .main-menu li {
 .social-media a#git {
     background-position: -193px 0
 }
+
+@media (max-width:991px) {
+
+    navbar,
+    .border-wrap,
+    .main-menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .hero-welcome,
+    .solutions-provided .solution,
+    .creative-teams {
+        display: flex;
+        column-gap: 30px;
+        align-items: flex-end;
+        grid-template-columns: none;
+        padding-bottom: 30px;
+    }
+
+    .hero-welcome>*,
+    .solutions-provided .solution>*,
+    .creative-teams>* {
+        flex: 1;
+    }
+
+    .hero-section {
+        background: #636c79;
+        height: auto;
+    }
+
+    .default-padding {
+        padding: 20px 10px 0;
+    }
+
+    .welcome-title h1 {
+        font-size: 20px;
+    }
+
+    .welcome-title .newsletter input {
+        padding-left: 30px;
+    }
+
+    .welcome-title .newsletter button {
+        padding: 10px 20px;
+    }
+
+    .heading {
+        font-size: 30px;
+        margin: 10px 0 30px;
+    }
+
+    .media-section {
+        margin: 2rem 0 1rem;
+    }
+
+    .solutions-provided .solution {
+        margin-bottom: 20px;
+    }
+
+    .team-profiles {
+        column-gap: 20px;
+    }
+
+    .team-profile img {
+        height: auto;
+    }
+
+    .solution-banner img,
+    .welcome-banner img {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width:767px) {
+
+    .hero-welcome,
+    .solutions-provided .solution,
+    .creative-teams {
+        flex-direction: column;
+        gap: 30px
+    }
+
+    .menu-sections {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    footer .connect-us {
+        padding-bottom: 10px;
+    }
+
+    .connect-us img {
+        width: 100px;
+    }
+
+    footer .connect-us {
+        flex-direction: column;
+        gap: 30px
+    }
+
+    .team-profiles.default-padding {
+        display: flex;
+        flex-direction: column;
+    }
+}
